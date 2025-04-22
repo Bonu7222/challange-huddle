@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: hsl(257, 40%, 49%);
+  color: #fff;
+  min-height: 100vh;
+  background-image: url('./images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-left: -100px;
+  
+}
+
+.logo img {
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.image-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+.content-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-section h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content-section p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.content-section .btn {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 12px 40px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.content-section .btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.social-icons {
+  margin-top: 40px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-section {
+    align-items: center;
+  }
+
+  .content-section h1 {
+    font-size: 24px;
+  }
+
+  .content-section p {
+    font-size: 14px;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    width: 140px;
+  }
+}
